@@ -29,6 +29,15 @@ html {
     scroll-padding-top: 70px;
 }
 
+.form-success.hidden {
+    display: none;
+}
+
+.form-success {
+    display: block;
+    color: green;
+}
+
 html,
 body {
     -webkit-tap-highlight-color: transparent;

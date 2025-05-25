@@ -461,37 +461,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form submission handling
-    // Form submission handling
-    // Update this part in your form submission code
-    consultationForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const formData = new FormData(consultationForm);
-
-        fetch("https://formsubmit.co/ajax/anthonywalcott31@gmail.com", {
-                method: "POST",
-                body: formData,
-            })
-            .then((response) => response.json())
-            .then((data) => {
-                consultationForm.style.display = "none";
-                formSuccess.classList.remove("hidden");
-                consultationForm.reset();
-
-                // Redirect to /received after 2 seconds
-                setTimeout(() => {
-                    window.location.href = "/received";
-                }, 2000);
-            })
-            .catch((error) => {
-                console.error("Form submission error:", error);
-            });
-
+    const consultationForm = document.querySelector('#consultation-form');
+    if (consultationForm) {
+        // Get form elements up front
+        const formSuccess = document.querySelector('.form-success'); // Add this line
         const sendButton = document.querySelector(".submit-button");
-        sendButton.textContent = "Sending...";
-        sendButton.disabled = true;
-    });
 
+        consultationForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Update button state first
+            if (sendButton) { // Add null check
+                sendButton.textContent = "Sending...";
+                sendButton.disabled = true;
+            }
+
+            const formData = new FormData(consultationForm);
+
+            fetch("https://formsubmit.co/ajax/bytecrafts.ca@gmail.com", {
+                    method: "POST",
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData,
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (formSuccess) { // Add null check
+                        formSuccess.classList.remove("hidden");
+                    }
+
+                    setTimeout(() => {
+                        sessionStorage.setItem('canAccessReceived', 'true');
+                        window.location.href = "/received";
+                    }, 600);
+                })
+                .catch((error) => {
+                    console.error("Form submission error:", error);
+                    // Reset button state on error
+                    if (sendButton) {
+                        sendButton.textContent = "Submit";
+                        sendButton.disabled = false;
+                    }
+                });
+        });
+    }
     // Back to Top Button
     const backToTopButton = document.getElementById('back-to-top');
 

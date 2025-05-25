@@ -107,8 +107,6 @@
     <!-- Load non-critical CSS asynchronously -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <!-- Add security headers via .htaccess or server config -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https://via.placeholder.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com">
-
     <!-- Add referrer policy -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -597,12 +595,7 @@
             <span class="close-modal">&times;</span>
             <h2>Request a Free Consultation</h2>
             <!-- Update the existing consultation modal form -->
-            <form id="consultation-form" action="https://formsubmit.co/ramisaziz58@gmail.com" method="POST">
-                <!-- Add hidden fields for FormSubmit configuration -->
-                <input type="hidden" name="_subject" value="New Consultation Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="https://bussiness-dd543.web.app/received">
-                <input type="hidden" name="_captcha" value="false">
+            <form id="consultation-form">
 
                 <div class="form-group">
                     <label for="consult-name">Full Name *</label>
@@ -636,7 +629,7 @@
                     <label for="consult-message">Tell us about your project</label>
                     <textarea id="consult-message" name="message" rows="4"></textarea>
                 </div>
-
+                <h2 class="form-success hidden">SUCCESS</h2>
                 <button type="submit" class="btn btn-block">Submit Request</button>
             </form>
         </div>
@@ -727,7 +720,6 @@
 
         }
     </script>
-    <!-- Add to your server configuration -->
 </body>
 
 </html>

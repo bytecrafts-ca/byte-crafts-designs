@@ -1,0 +1,20 @@
+{
+    "name": "ByteCraft Designs",
+    "short_name": "ByteCraft",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#3563E9",
+    "description": "Professional web design services for small businesses",
+    "icons": [{
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

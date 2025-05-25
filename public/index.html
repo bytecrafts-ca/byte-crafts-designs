@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>ByteCraft Designs | Professional Web Design & Development Services</title>
+    <meta name="description" content="ByteCraft Designs creates custom, high-performance websites for small businesses. Get a beautiful, mobile-friendly website that converts visitors into customers.">
+    <meta name="keywords" content="web design, web development, business website, ecommerce website, responsive design, SEO, website maintenance, custom website">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.bytecraftdesigns.com">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="ByteCraft Designs | Professional Web Design & Development Services">
+    <meta property="og:description" content="Custom web design and development services for small businesses. Get a beautiful, mobile-friendly website that converts visitors into customers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bytecraftdesigns.com">
+    <meta property="og:image" content="https://www.bytecraftdesigns.com/images/social-preview.jpg">
+    <meta property="og:site_name" content="ByteCraft Designs">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ByteCraft Designs | Professional Web Design & Development Services">
+    <meta name="twitter:description" content="Custom web design and development services for small businesses. Get a beautiful, mobile-friendly website that converts visitors into customers.">
+    <meta name="twitter:image" content="https://www.bytecraftdesigns.com/images/social-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3563e9">
+    <meta name="msapplication-TileColor" content="#3563e9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts and Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebDesignCompany",
+            "name": "ByteCraft Designs",
+            "image": "https://www.bytecraftdesigns.com/images/logo.jpg",
+            "@id": "https://www.bytecraftdesigns.com",
+            "url": "https://www.bytecraftdesigns.com",
+            "telephone": "+15551234567",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Web Street",
+                "addressLocality": "Digital City",
+                "addressRegion": "CA",
+                "postalCode": "12345",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "17:00"
+            },
+            "sameAs": [
+                "https://www.facebook.com/bytecraftdesigns",
+                "https://www.twitter.com/bytecraftdesigns",
+                "https://www.instagram.com/bytecraftdesigns",
+                "https://www.linkedin.com/company/bytecraftdesigns"
+            ]
+        }
+    </script>
+
+    <script src="app.js" defer></script>
+    <!-- Add these to your head section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Add security headers via .htaccess or server config -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https://via.placeholder.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com">
+
+    <!-- Add referrer policy -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Add X-UA-Compatible for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3563E9">
+    <!-- In your index.html head section -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" crossorigin>
+    <meta name="slick-site-verification" content="searchconsole-w2ph3uyshbb" />
+</head>
+
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Header -->
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="Main navigation">
+                <a href="#" class="logo" aria-label="ByteCraft Designs Home">ByteCraft<span>Designs</span></a>
+                <ul class="nav-links" aria-label="Main menu">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact" class="contact-btn btn-nav">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+ <span></span>
+ <span></span>
+ <span></span>
+ </button>
+                <!-- Mobile navigation menu (hidden by default) -->
+                <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="menu" hidden>
+                    <!-- Mobile menu content will be inserted by JavaScript -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 id="hero-heading">Custom Web Design for your Business</h1>
+                        <p>Elevate your online presence with professional, affordable, and high-converting websites tailored to your specific business needs.</p>
+                        <div class="hero-btns">
+                            <a href="#contact" class="btn contact-btn">Get a Free Consultation</a>
+                            <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="photos/design-illustration.png" alt="Website design illustration showing a computer screen with design elements" data-src="real-image.webp">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape" aria-hidden="true"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What We Do</span>
+                    <h2 id="services-heading">Our Services</h2>
+                    <p>Expert web development solutions for small businesses</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Custom Website Design</h3>
+                        <p>Beautiful, responsive websites designed to showcase your brand and convert visitors into customers.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile-First Development</h3>
+                        <p>Responsive designs that work flawlessly across all devices and screen sizes.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>Custom online stores with secure payment gateways and user-friendly shopping experiences.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your site's visibility in search engines and drive organic traffic to your business.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance Optimization</h3>
+                        <p>Fast-loading websites that provide excellent user experience and higher conversion rates.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Website Maintenance</h3>
+                        <p>Regular updates, security checks, and optimizations to keep your website running smoothly.</p>
+                        <a href="#contact" class="btn-text contact-btn">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Work</span>
+                    <h2 id="portfolio-heading">Featured Projects</h2>
+                    <p>Check out some of our latest website projects</p>
+                </div>
+                <div class="portfolio-filters" role="tablist" aria-label="Portfolio filters">
+                    <button class="portfolio-filter active" data-filter="all" role="tab" aria-selected="true" id="tab-all" aria-controls="panel-all">All</button>
+                    <button class="portfolio-filter" data-filter="web" role="tab" aria-selected="false" id="tab-web" aria-controls="panel-web">Web Design</button>
+                    <button class="portfolio-filter" data-filter="ecommerce" role="tab" aria-selected="false" id="tab-ecommerce" aria-controls="panel-ecommerce">E-Commerce</button>
+                    <button class="portfolio-filter" data-filter="branding" role="tab" aria-selected="false" id="tab-branding" aria-controls="panel-branding">Branding</button>
+                </div>
+                <div id="panel-all" class="portfolio-grid" role="tabpanel" aria-labelledby="tab-all">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=Mountain+Cafe" alt="Mountain Cafe website design showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Mountain Cafe</h3>
+                            <p>Restaurant Website Design</p>
+                            <a href="#" class="btn btn-sm" aria-label="View Mountain Cafe project details">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=GreenThumb" alt="GreenThumb Landscaping website design showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>GreenThumb</h3>
+                            <p>Landscaping Service Website</p>
+                            <a href="#" class="btn btn-sm" aria-label="View GreenThumb project details">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=Artisan+Crafts" alt="Artisan Crafts e-commerce store showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Artisan Crafts</h3>
+                            <p>E-Commerce Store</p>
+                            <a href="#" class="btn btn-sm" aria-label="View Artisan Crafts project details">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web branding">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=Wellness+Center" alt="Wellness Center website design showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Wellness Center</h3>
+                            <p>Health & Wellness Website</p>
+                            <a href="#" class="btn btn-sm" aria-label="View Wellness Center project details">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web branding">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=Urban+Realty" alt="Urban Realty website design showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Urban Realty</h3>
+                            <p>Real Estate Website</p>
+                            <a href="#" class="btn btn-sm" aria-label="View Urban Realty project details">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=Tech+Solutions" alt="Tech Solutions website design showcase" data-src="real-image.webp" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Tech Solutions</h3>
+                            <p>IT Services Website</p>
+                            <a href="#" class="btn btn-sm" aria-label="View Tech Solutions project details">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional tabpanels would be created by JavaScript for filtered content -->
+                <div class="portfolio-more">
+                    <a href="#contact" class="btn contact-btn">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" aria-labelledby="process-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">How We Work</span>
+                    <h2 id="process-heading">Our Process</h2>
+                    <p>How we create your perfect website</p>
+                </div>
+                <div class="process-container">
+                    <ol class="process-steps">
+                        <li class="process-step">
+                            <div class="step-number" aria-hidden="true">1</div>
+                            <div class="step-content">
+                                <h3>Discovery</h3>
+                                <p>We learn about your business, goals, and audience to create a tailored strategy.</p>
+                            </div>
+                        </li>
+                        <li class="process-step">
+                            <div class="step-number" aria-hidden="true">2</div>
+                            <div class="step-content">
+                                <h3>Design</h3>
+                                <p>We create wireframes and visual designs based on your brand and requirements.</p>
+                            </div>
+                        </li>
+                        <li class="process-step">
+                            <div class="step-number" aria-hidden="true">3</div>
+                            <div class="step-content">
+                                <h3>Development</h3>
+                                <p>We build your website with clean, efficient code optimized for performance.</p>
+                            </div>
+                        </li>
+                        <li class="process-step">
+                            <div class="step-number" aria-hidden="true">4</div>
+                            <div class="step-content">
+                                <h3>Launch</h3>
+                                <p>After thorough testing, we deploy your site and provide training and support.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonials Section -->
+        <!-- Testimonials Section -->
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Client Love</span>
+                    <h2 id="testimonials-heading">Client Testimonials</h2>
+                    <p>What our clients say about working with us</p>
+                </div>
+                <div class="testimonial-slider" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+                                <blockquote>
+                                    <p class="testimonial-text">"ByteCraft Designs transformed our online presence completely. Their attention to detail and understanding of our brand was exceptional. Our new website has increased our leads by 40% in just three months!"</p>
+                                    <footer class="testimonial-author-info">
+                                        <div>
+                                            <cite class="testimonial-author">Sarah Johnson</cite>
+                                            <p class="testimonial-role">Owner, Mountain Cafe</p>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+                                <blockquote>
+                                    <p class="testimonial-text">"Working with ByteCraft was a game-changer for our business. They created an e-commerce site that not only looks great but converts customers far better than our old site. The entire process was smooth and professional."</p>
+                                    <footer class="testimonial-author-info">
+                                        <div>
+                                            <cite class="testimonial-author">Michael Chen</cite>
+                                            <p class="testimonial-role">Founder, Artisan Crafts</p>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                            <div class="testimonial-card">
+                                <div class="testimonial-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+                                <blockquote>
+                                    <p class="testimonial-text">"As a small business owner, I was worried about the cost of a custom website. ByteCraft provided an affordable solution without compromising on quality. Their support even after launch has been incredible."</p>
+                                    <footer class="testimonial-author-info">
+                                        <div>
+                                            <cite class="testimonial-author">David Miller</cite>
+                                            <p class="testimonial-role">Owner, GreenThumb Landscaping</p>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls" aria-label="Carousel controls">
+                        <button class="testimonial-arrow prev" id="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <div class="testimonial-dots" id="testimonial-dots" role="tablist" aria-label="Select a testimonial">
+                            <button class="dot active" data-index="0" role="tab" aria-selected="true" aria-label="Show testimonial 1" aria-controls="testimonial-1"></button>
+                            <button class="dot" data-index="1" role="tab" aria-selected="false" aria-label="Show testimonial 2" aria-controls="testimonial-2"></button>
+                            <button class="dot" data-index="2" role="tab" aria-selected="false" aria-label="Show testimonial 3" aria-controls="testimonial-3"></button>
+                        </div>
+                        <button class="testimonial-arrow next" id="next-testimonial" aria-label="Next testimonial"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about-hero" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <span class="section-tag">Who We Are</span>
+                        <h2 id="about-heading">About ByteCraft Designs</h2>
+                        <p>At ByteCraft Designs, we specialize in creating beautiful, functional websites for small businesses. With over 10 years of experience, our team understands the unique challenges and opportunities that small businesses face online.</p>
+                        <p>We believe that great design should be accessible to businesses of all sizes, which is why we offer tailored solutions at competitive prices without compromising on quality or performance.</p>
+                        <div class="about-stats" aria-label="Company statistics">
+                            <div class="stat">
+                                <span class="stat-number" aria-label="Client satisfaction rate">98%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" aria-label="Years of experience">10+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn contact-btn">Learn More About Us</a>
+                    </div>
+                    <div class="about-image" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Rates</span>
+                    <h2>Transparent Pricing</h2>
+                    <p>Affordable web design packages for small businesses</p>
+                </div>
+                <div class="pricing-toggle">
+                    <span class="toggle-label">One-time Payment</span>
+                    <label class="toggle-switch">
+ <input type="checkbox" id="pricing-toggle">
+ <span class="slider"></span>
+ </label>
+                    <span class="toggle-label">Monthly Payment</span>
+                </div>
+                <div class="pricing-plans">
+                    <div class="pricing-plan">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Starter</h3>
+                            <div class="plan-price">$699<span>/one-time</span></div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 2-4 Page Website</li>
+                                <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+                                <li><i class="fas fa-check"></i> Contact Form</li>
+                                <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                                <li><i class="fas fa-check"></i> 1 Round of Revisions</li>
+                                <li><i class="fas fa-check"></i> 3-5 Weeks Delivery</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="#contact" class="btn btn-outline contact-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="pricing-plan plan-popular">
+                        <div class="popular-tag">Most Popular</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">Business</h3>
+                            <div class="plan-price">$1,399<span>/one-time</span></div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 4-6 Page Website</li>
+                                <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+                                <li><i class="fas fa-check"></i> Advanced Contact Forms</li>
+                                <li><i class="fas fa-check"></i> Full SEO Optimization</li>
+                                <li><i class="fas fa-check"></i> 3 Rounds of Revisions</li>
+                                <li><i class="fas fa-check"></i> 4-8 Weeks Delivery</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="#contact" class="btn contact-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="pricing-plan">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Paypal Integration Package</h3>
+                            <div class="plan-price">$1,899<span>/one-time</span></div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Pages 6-8</li>
+                                <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+                                <li><i class="fas fa-check"></i> Integration of Paypal Buttons</li>
+                                <li><i class="fas fa-check"></i> Advanced SEO Package</li>
+                                <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                                <li><i class="fas fa-check"></i> 5-10 Weeks Delivery</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <a href="#contact" class="btn btn-outline contact-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-note">
+                    <p>Need a custom solution? <a href="#contact" class="contact-btn">Contact us</a> for a personalized quote.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Online Presence?</h2>
+                <p>Let's create a stunning website that drives results for your business.</p>
+                <a href="#contact" class="btn btn-white contact-btn">Get a Free Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">ByteCraft<span>Designs</span></a>
+                    <p>We create beautiful, functional websites that help small businesses succeed online.</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Custom Website Design</a></li>
+                        <li><a href="#services">Mobile-First Development</a></li>
+                        <li><a href="#services">E-Commerce Solutions</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Our Work</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#contact" class="contact-btn">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Street, Digital City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bytecraftdesigns.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ByteCraft Designs. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Request a Free Consultation</h2>
+            <!-- Update the existing consultation modal form -->
+            <form id="consultation-form" action="https://formsubmit.co/ramisaziz58@gmail.com" method="POST">
+                <!-- Add hidden fields for FormSubmit configuration -->
+                <input type="hidden" name="_subject" value="New Consultation Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://bussiness-dd543.web.app/received">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="consult-name">Full Name *</label>
+                    <input type="text" id="consult-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consult-email">Email *</label>
+                    <input type="email" id="consult-email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consult-phone">Phone Number *</label>
+                    <input type="tel" id="consult-phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consult-service">Service Interested In</label>
+                    <select id="consult-service" name="service">
+            <option value="">Select a service</option>
+            <option value="Custom Website Design">Custom Website Design</option>
+            <option value="Mobile-First Development">Mobile-First Development</option>
+            <option value="E-Commerce Solutions">E-Commerce Solutions</option>
+            <option value="Starter Package">Starter Package</option>
+            <option value="Business Package">Business Package</option>
+            <option value="E-Commerce Package">E-Commerce Package</option>
+        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="consult-message">Tell us about your project</label>
+                    <textarea id="consult-message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "How much does a custom website cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our custom website packages start at $999 for a basic small business website. E-commerce websites typically start at $3,499. We offer transparent pricing with no hidden fees. Contact us for a free quote tailored to your specific needs."
+                }
+            }, {
+                "@type": "Question",
+                "name": "How long does it take to build a website?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The timeline depends on the complexity of your project. A basic website typically takes 2-3 weeks, while more complex e-commerce sites may take 4-6 weeks. We'll provide a detailed timeline after our initial consultation."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Do you provide website maintenance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we offer comprehensive website maintenance plans to keep your site secure, up-to-date, and performing at its best. Our plans include regular updates, security monitoring, backups, and technical support."
+                }
+            }]
+        }
+    </script>
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "ByteCraft Designs",
+            "image": "https://www.bytecraftdesigns.com/images/logo.jpg",
+            "@id": "https://www.bytecraftdesigns.com",
+            "url": "https://www.bytecraftdesigns.com",
+            "telephone": "+15551234567",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Web Street",
+                "addressLocality": "Digital City",
+                "addressRegion": "CA",
+                "postalCode": "12345",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 37.7749,
+                "longitude": -122.4194
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "17:00"
+            },
+            "sameAs": [
+                "https://www.facebook.com/bytecraftdesigns",
+                "https://www.twitter.com/bytecraftdesigns",
+                "https://www.instagram.com/bytecraftdesigns",
+                "https://www.linkedin.com/company/bytecraftdesigns"
+            ]
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+
+        }
+    </script>
+    <!-- Add to your server configuration -->
+</body>
+
+</html>

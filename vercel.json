@@ -1,0 +1,13 @@
+{
+    "rewrites": [{
+        "source": "/received",
+        "destination": "/received.html"
+    }],
+    "headers": [{
+        "source": "/received.html",
+        "headers": [{
+            "key": "Cache-Control",
+            "value": "public, max-age=3600"
+        }]
+    }]
+}

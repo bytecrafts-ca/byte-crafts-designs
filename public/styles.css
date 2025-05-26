@@ -2124,4 +2124,266 @@ h3 {
 }
 
 
+/* Transformation Page Styles */
+
+.transformation-hero {
+    background: linear-gradient(135deg, rgba(53, 99, 233, 0.15) 0%, rgba(53, 99, 233, 0.05) 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.transformation-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.transformation-hero .subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: var(--secondary);
+}
+
+.problem-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.3rem;
+    color: var(--dark);
+}
+
+.problem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.problem-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--primary);
+}
+
+.problem-card:hover {
+    transform: translateY(-10px);
+}
+
+.problem-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.problem-card h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.transformation-section {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.transformation-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.transformation-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.transformation-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.transformation-content {
+    flex: 1;
+}
+
+.transformation-content h3 {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.transformation-image {
+    flex: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.transformation-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.transformation-image:hover img {
+    transform: scale(1.05);
+}
+
+.results-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.results-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.result-stats {
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stat-label {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.result-content h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.our-process {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process-step {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.transformation-cta {
+    padding: 80px 0;
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+.transformation-cta h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+}
+
+.transformation-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .transformation-item,
+    .transformation-item.reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .transformation-hero h1 {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .transformation-content h3 {
+        font-size: 1.5rem;
+    }
+    .stat {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .transformation-hero h1 {
+        font-size: 1.8rem;
+    }
+    .transformation-hero .subtitle {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .process-step {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+
 /* Replace outline with a different visual indicator */

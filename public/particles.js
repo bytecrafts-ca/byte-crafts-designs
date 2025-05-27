@@ -1,10 +1,9 @@
-let particlesConfig = {
-    particles: {
+let particlesConfig = {    particles: {
         number: {
-            value: window.innerWidth < 768 ? 30 : 50,
+            value: window.innerWidth < 768 ? 50 : 80,
             density: {
                 enable: true,
-                value_area: 1000
+                value_area: 800
             }
         },
         color: {
@@ -14,22 +13,22 @@ let particlesConfig = {
             type: "circle"
         },
         opacity: {
-            value: 0.12,
+            value: 0.25,
             random: true,
             anim: {
                 enable: true,
                 speed: 1,
-                opacity_min: 0.05,
+                opacity_min: 0.1,
                 sync: false
             }
         },
         size: {
-            value: 2,
+            value: 3,
             random: true,
             anim: {
                 enable: true,
                 speed: 2,
-                size_min: 0.5,
+                size_min: 1,
                 sync: false
             }
         },
@@ -37,12 +36,12 @@ let particlesConfig = {
             enable: true,
             distance: 150,
             color: "#3563E9",
-            opacity: 0.1,
-            width: 1
+            opacity: 0.2,
+            width: 1.5
         },
         move: {
             enable: true,
-            speed: 1.5,
+            speed: 2,
             direction: "none",
             random: true,
             straight: false,

@@ -2386,4 +2386,251 @@ h3 {
 }
 
 
+/* Why Us Page Specific Styles */
+
+#why-hero .hero-text h1 .highlight {
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+}
+
+#why-hero .hero-text h1 .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(245, 158, 11, 0.3);
+    z-index: -1;
+}
+
+.section-dark {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.section-light {
+    background-color: var(--light);
+    padding: 80px 0;
+}
+
+.problem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.problem-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--primary);
+    color: var(--secondary);
+}
+
+.problem-card:hover {
+    transform: translateY(-10px);
+}
+
+.problem-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.problem-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.problem-stats {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border);
+}
+
+.stat {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.transformation-steps {
+    margin-top: 60px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.step-reverse {
+    flex-direction: row-reverse;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.step-image {
+    flex: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.step-image:hover img {
+    transform: scale(1.05);
+}
+
+.benefits-list {
+    margin-top: 20px;
+}
+
+.benefits-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefits-list i {
+    color: var(--primary);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.result-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-10px);
+}
+
+.result-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.result-content {
+    padding: 30px;
+    color: var(--secondary);
+}
+
+.result-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.result-stats {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#why-cta {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .step {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .step-image,
+    .step-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    .problem-cards {
+        grid-template-columns: 1fr;
+    }
+    #why-hero .hero-content {
+        flex-direction: column;
+    }
+    #why-hero .hero-text {
+        order: 1;
+        text-align: center;
+    }
+    #why-hero .hero-image {
+        order: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .result-stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .step h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
 /* Replace outline with a different visual indicator */

@@ -4,21 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transform Your Business | ByteCraft Designs</title>
+    <title>Why Choose ByteCraft | Professional Web Design That Converts</title>
+    <meta name="description" content="Discover how ByteCraft's strategic web design approach delivers real business results - more leads, higher conversions, and premium positioning for your brand.">
+
+    <!-- All your existing head content from index.html -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
-    <!-- Header (same as main site) -->
+    <!-- Your exact header from index.html -->
     <header role="banner">
         <div class="container">
             <nav role="navigation" aria-label="Main navigation">
                 <a href="index.html" class="logo" aria-label="ByteCraft Designs Home">ByteCraft<span>Designs</span></a>
                 <ul class="nav-links" aria-label="Main menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="why-us.html" aria-current="page">Why Us</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact" class="contact-btn btn-nav">Get Started</a></li>
                 </ul>
                 <button class="mobile-menu" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -31,179 +40,444 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="transformation-hero" aria-labelledby="hero-heading">
+        <!-- Hero Section with enhanced animations -->
+        <section id="why-hero" class="hero" aria-labelledby="why-hero-heading">
+            <div id="particles-js"></div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 id="hero-heading">Your Website Should Be Working Harder Than You Do</h1>
-                    <p class="subtitle">Stop settling for an online presence that just exists. Get a website that actively grows your business.</p>
-                    <a href="#contact" class="btn btn-primary">Get Your Free Strategy Session</a>
+                    <div class="hero-text">
+                        <h1 id="why-hero-heading" class="animate-heading">Websites That Work <span class="highlight">While You Sleep</span></h1>
+                        <p class="animate-subtitle">Stop wasting money on a website that just sits there. Our strategic designs actively attract ideal clients and convert them into paying customers.</p>
+                        <div class="hero-btns">
+                            <a href="#results" class="btn btn-primary animate-btn">See Proven Results</a>
+                            <a href="#contact" class="btn btn-outline animate-btn">Get Your Free Audit</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="photos/chart.png" alt="Business growth chart showing upward trend" loading="lazy" class="animate-image">
+                    </div>
                 </div>
             </div>
+            <div class="hero-shape" aria-hidden="true"></div>
         </section>
 
-        <!-- The Problem Section -->
-        <section class="problem-section" aria-labelledby="problem-heading">
+        <!-- The Problem Section with scroll-triggered animations -->
+        <section id="problems" class="section-dark" aria-labelledby="problems-heading">
             <div class="container">
-                <h2 id="problem-heading" class="section-title">The Hidden Costs of a Weak Online Presence</h2>
+                <div class="section-header">
+                    <span class="section-tag animate-tag">The Reality</span>
+                    <h2 id="problems-heading" class="animate-title">Is Your Website Costing You Business?</h2>
+                    <p class="animate-description">Most small business websites suffer from these profit-draining problems</p>
+                </div>
+
                 <div class="problem-cards">
-                    <div class="problem-card">
-                        <div class="problem-icon">❌</div>
-                        <h3>Invisible to Potential Customers</h3>
-                        <p>88% of consumers research online before making a purchase. If they can't find you, they're buying from your competitors.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-icon">💸</div>
-                        <h3>Wasted Advertising Dollars</h3>
-                        <p>Without a high-converting website, you're pouring money into ads that lead nowhere.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-icon">😞</div>
-                        <h3>Undermining Your Credibility</h3>
-                        <p>75% of users judge a company's credibility based on website design. An outdated site makes you look unprofessional.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Transformation Section -->
-        <section class="transformation-section" aria-labelledby="transformation-heading">
-            <div class="container">
-                <h2 id="transformation-heading" class="section-title">What a Strategic Website Can Do For You</h2>
-
-                <div class="transformation-grid">
-                    <div class="transformation-item">
-                        <div class="transformation-content">
-                            <h3>From Anonymous to Authority</h3>
-                            <p>We position you as the go-to expert in your field, with content that demonstrates your unique value proposition.</p>
+                    <div class="problem-card animate-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-search-dollar"></i>
                         </div>
-                        <div class="transformation-image">
-                            <img src="images/authority-transformation.jpg" alt="Business owner shaking hands with happy client" loading="lazy">
+                        <h3>Invisible to Buyers</h3>
+                        <p>88% of consumers research online before purchasing. If they can't find you, they're buying from competitors.</p>
+                        <div class="problem-stats">
+                            <div class="stat">0.5%</div>
+                            <div class="stat-label">Average Conversion Rate</div>
                         </div>
                     </div>
 
-                    <div class="transformation-item reverse">
-                        <div class="transformation-content">
-                            <h3>From Random Visitors to Qualified Leads</h3>
-                            <p>Our strategic design guides visitors to take action, converting casual browsers into serious inquiries.</p>
+                    <div class="problem-card animate-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-money-bill-wave"></i>
                         </div>
-                        <div class="transformation-image">
-                            <img src="images/leads-transformation.jpg" alt="Business owner reviewing new customer inquiries" loading="lazy">
-                        </div>
-                    </div>
-
-                    <div class="transformation-item">
-                        <div class="transformation-content">
-                            <h3>From Time-Consuming to Time-Saving</h3>
-                            <p>Automate inquiries, bookings, and FAQs so you can focus on delivering great service instead of administrative tasks.</p>
-                        </div>
-                        <div class="transformation-image">
-                            <img src="images/time-savings.jpg" alt="Business owner relaxing while systems work automatically" loading="lazy">
+                        <h3>Wasted Ad Spend</h3>
+                        <p>Without proper conversion architecture, you're pouring money into ads that lead nowhere.</p>
+                        <div class="problem-stats">
+                            <div class="stat">72%</div>
+                            <div class="stat-label">Of Visitors Never Return</div>
                         </div>
                     </div>
 
-                    <div class="transformation-item reverse">
-                        <div class="transformation-content">
-                            <h3>From Price Sensitivity to Premium Positioning</h3>
-                            <p>When you demonstrate value effectively, customers stop shopping on price and start choosing based on quality.</p>
+                    <div class="problem-card animate-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-user-shield"></i>
                         </div>
-                        <div class="transformation-image">
-                            <img src="images/premium-positioning.jpg" alt="Happy customer choosing quality over price" loading="lazy">
+                        <h3>Undermining Trust</h3>
+                        <p>75% of users judge credibility based on web design. An outdated site makes you look unprofessional.</p>
+                        <div class="problem-stats">
+                            <div class="stat">3 sec</div>
+                            <div class="stat-label">To Lose a Visitor</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Results Section -->
-        <section class="results-section" aria-labelledby="results-heading">
+        <!-- Transformation Section with advanced animations -->
+        <section id="transformations" class="section-light" aria-labelledby="transformations-heading">
             <div class="container">
-                <h2 id="results-heading" class="section-title">Real Business Transformations</h2>
-                <div class="results-cards">
-                    <div class="result-card">
-                        <div class="result-stats">
-                            <div class="stat">+217%</div>
-                            <div class="stat-label">More Leads</div>
+                <div class="section-header">
+                    <span class="section-tag animate-tag">Our Approach</span>
+                    <h2 id="transformations-heading" class="animate-title">Strategic Design That Delivers <span class="highlight">Real Results</span></h2>
+                    <p class="animate-description">We don't just build websites - we create high-performance business assets</p>
+                </div>
+
+                <div class="transformation-steps">
+                    <div class="step step-animate">
+                        <div class="step-content">
+                            <div class="step-number">1</div>
+                            <h3>Conversion-Focused Architecture</h3>
+                            <p>Every element guides visitors toward taking action with strategic placement of CTAs, trust signals, and benefit-focused messaging.</p>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check-circle"></i> Reduce bounce rates by up to 60%</li>
+                                <li><i class="fas fa-check-circle"></i> 3x more lead capture</li>
+                                <li><i class="fas fa-check-circle"></i> Clear paths to conversion</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="photos/conversion-architecture.jpg" alt="Website wireframe showing conversion paths" loading="lazy" class="zoom-image">
+                        </div>
+                    </div>
+
+                    <div class="step step-reverse step-animate">
+                        <div class="step-content">
+                            <div class="step-number">2</div>
+                            <h3>Premium Brand Positioning</h3>
+                            <p>We communicate your unique value proposition so effectively that price becomes secondary to quality.</p>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check-circle"></i> 40% higher perceived value</li>
+                                <li><i class="fas fa-check-circle"></i> Stand out from competitors</li>
+                                <li><i class="fas fa-check-circle"></i> Attract better clients</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="photos/brand-positioning.jpg" alt="Luxury brand website design" loading="lazy" class="zoom-image">
+                        </div>
+                    </div>
+
+                    <div class="step step-animate">
+                        <div class="step-content">
+                            <div class="step-number">3</div>
+                            <h3>Ongoing Performance Growth</h3>
+                            <p>Your site evolves with data-driven improvements to maintain competitive advantage.</p>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check-circle"></i> Monthly analytics reviews</li>
+                                <li><i class="fas fa-check-circle"></i> Conversion rate optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Continuous content upgrades</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="photos/performance-growth.jpg" alt="Analytics dashboard showing growth" loading="lazy" class="zoom-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section with parallax and reveal effects -->
+        <section id="results" class="section-dark" aria-labelledby="results-heading">
+            <div class="parallax-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag animate-tag">Case Studies</span>
+                    <h2 id="results-heading" class="animate-title">Real Businesses, <span class="highlight">Real Transformations</span></h2>
+                    <p class="animate-description">See how we've helped businesses like yours achieve remarkable results</p>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card reveal-card">
+                        <div class="result-image">
+                            <img src="photos/mountain-cafe-result.jpg" alt="Mountain Cafe case study" loading="lazy">
                         </div>
                         <div class="result-content">
                             <h3>Mountain Cafe</h3>
-                            <p>"After our redesign, we went from 3-5 catering inquiries per month to 10-15 per week. We've had to expand our kitchen staff to keep up with demand."</p>
+                            <div class="result-stats">
+                                <div class="stat">+217%</div>
+                                <div class="stat-label">More Leads</div>
+                            </div>
+                            <p>"After our redesign, catering inquiries went from 3-5 per month to 10-15 per week. We've expanded our kitchen staff to keep up with demand."</p>
+                            <a href="#" class="btn btn-outline">View Case Study</a>
                         </div>
                     </div>
 
-                    <div class="result-card">
-                        <div class="result-stats">
-                            <div class="stat">+153%</div>
-                            <div class="stat-label">Revenue Growth</div>
+                    <div class="result-card reveal-card">
+                        <div class="result-image">
+                            <img src="photos/greenthumb-result.jpg" alt="GreenThumb case study" loading="lazy">
                         </div>
                         <div class="result-content">
                             <h3>GreenThumb Landscaping</h3>
-                            <p>"The online booking system alone has saved me 10 hours per week in phone calls. Our premium services are now 60% of our business instead of 20%."</p>
-                        </div>
-                    </div>
-
-                    <div class="result-card">
-                        <div class="result-stats">
-                            <div class="stat">-80%</div>
-                            <div class="stat-label">Time Wasted</div>
-                        </div>
-                        <div class="result-content">
-                            <h3>Urban Realty</h3>
-                            <p>"Our new property inquiry system filters out non-serious buyers automatically. We spend time only with qualified leads now."</p>
+                            <div class="result-stats">
+                                <div class="stat">+153%</div>
+                                <div class="stat-label">Revenue Growth</div>
+                            </div>
+                            <p>"The online booking system saves 10 hours/week in phone calls. Our premium services are now 60% of business instead of 20%."</p>
+                            <a href="#" class="btn btn-outline">View Case Study</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Process Section -->
-        <section class="our-process" aria-labelledby="process-heading">
+        <!-- CTA Section with floating animation -->
+        <section id="why-cta" class="cta">
             <div class="container">
-                <h2 id="process-heading" class="section-title">How We Create Transformations (Not Just Websites)</h2>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Deep Business Discovery</h3>
-                            <p>We don't just ask what you want - we uncover what your business needs to grow. Through our proprietary discovery process, we identify your unique value proposition and competitive advantages.</p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Strategic Conversion Architecture</h3>
-                            <p>Every element is placed with purpose to guide visitors toward taking action. We design for how people actually browse, not how we wish they would.</p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Ongoing Performance Optimization</h3>
-                            <p>Your site evolves with your business. We monitor analytics and make data-driven improvements to keep your competitive edge sharp.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="transformation-cta" aria-labelledby="cta-heading">
-            <div class="container">
-                <h2 id="cta-heading">Ready to Transform Your Online Presence Into a Business Growth Engine?</h2>
-                <p>Schedule your free, no-pressure strategy session today. We'll analyze your current site and show you exactly what's holding you back.</p>
-                <a href="#contact" class="btn btn-white">Get Your Free Strategy Session</a>
+                <h2 class="float-text">Ready to Transform Your Website Into a 24/7 Sales Engine?</h2>
+                <p class="float-text">Get your free, no-obligation website audit and discover exactly what's holding your business back</p>
+                <a href="#contact" class="btn btn-white float-btn">Get My Free Audit</a>
             </div>
         </section>
     </main>
 
-    <!-- Footer (same as main site) -->
+
+    <!-- Your exact footer from index.html -->
     <footer>
-        <!-- Your existing footer code -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">ByteCraft<span>Designs</span></a>
+                    <p>We create beautiful, functional websites that help small businesses succeed online.</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Custom Website Design</a></li>
+                        <li><a href="#services">Mobile-First Development</a></li>
+                        <li><a href="#services">E-Commerce Solutions</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Our Work</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#contact" class="contact-btn">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Web Street, Digital City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bytecraftdesigns.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ByteCraft Designs. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Consultation Modal (from your existing code) -->
+    <div id="consultation-modal" class="modal">
+        <!-- Your existing modal code -->
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
     <script src="app.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero section animations
+            gsap.from(".animate-heading", {
+                duration: 1.2,
+                y: 80,
+                opacity: 0,
+                ease: "power4.out",
+                delay: 0.3
+            });
+
+            gsap.from(".animate-subtitle", {
+                duration: 1,
+                y: 60,
+                opacity: 0,
+                ease: "power3.out",
+                delay: 0.6
+            });
+
+            gsap.from(".animate-btn", {
+                duration: 0.8,
+                y: 40,
+                opacity: 0,
+                stagger: 0.15,
+                ease: "back.out(1.2)",
+                delay: 0.9
+            });
+
+            gsap.from(".animate-image", {
+                duration: 1.2,
+                x: 100,
+                opacity: 0,
+                ease: "power3.out",
+                delay: 0.6
+            });
+
+            // Floating animation for hero image
+            gsap.to(".animate-image", {
+                y: 20,
+                duration: 3,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut"
+            });
+
+            // Problem section animations with ScrollTrigger
+            gsap.utils.toArray(".animate-card").forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 50,
+                    opacity: 0,
+                    duration: 0.8,
+                    delay: i * 0.2,
+                    ease: "back.out(1.2)"
+                });
+            });
+
+            // Transformation steps animations
+            gsap.utils.toArray(".step-animate").forEach((step, i) => {
+                gsap.from(step, {
+                    scrollTrigger: {
+                        trigger: step,
+                        start: "top 75%",
+                        toggleActions: "play none none none"
+                    },
+                    x: i % 2 === 0 ? -100 : 100,
+                    opacity: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+            });
+
+            // Zoom effect on step images
+            gsap.utils.toArray(".zoom-image").forEach(image => {
+                ScrollTrigger.create({
+                    trigger: image,
+                    start: "top bottom",
+                    end: "bottom top",
+                    onEnter: () => gsap.to(image, {
+                        scale: 1.05,
+                        duration: 0.5
+                    }),
+                    onLeave: () => gsap.to(image, {
+                        scale: 1,
+                        duration: 0.5
+                    }),
+                    onEnterBack: () => gsap.to(image, {
+                        scale: 1.05,
+                        duration: 0.5
+                    }),
+                    onLeaveBack: () => gsap.to(image, {
+                        scale: 1,
+                        duration: 0.5
+                    })
+                });
+            });
+
+            // Reveal effect for result cards
+            gsap.utils.toArray(".reveal-card").forEach(card => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 100,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+            });
+
+            // Parallax effect for results section
+            gsap.to(".parallax-bg", {
+                scrollTrigger: {
+                    trigger: "#results",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                },
+                y: 100,
+                ease: "none"
+            });
+
+            // Floating animation for CTA section
+            gsap.to(".float-text", {
+                scrollTrigger: {
+                    trigger: "#why-cta",
+                    start: "top bottom",
+                    toggleActions: "play none none none"
+                },
+                y: 10,
+                duration: 2,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut"
+            });
+
+            gsap.to(".float-btn", {
+                scrollTrigger: {
+                    trigger: "#why-cta",
+                    start: "top bottom",
+                    toggleActions: "play none none none"
+                },
+                y: 15,
+                duration: 3,
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                delay: 0.5
+            });
+
+            // Text reveal animation for headings
+            const splitTextElements = document.querySelectorAll('.animate-title');
+            splitTextElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                const words = text.split(' ');
+                words.forEach(word => {
+                    const span = document.createElement('span');
+                    span.style.display = 'inline-block';
+                    span.style.overflow = 'hidden';
+                    const innerSpan = document.createElement('span');
+                    innerSpan.style.display = 'inline-block';
+                    innerSpan.textContent = word + ' ';
+                    span.appendChild(innerSpan);
+                    element.appendChild(span);
+
+                    gsap.from(innerSpan, {
+                        y: '100%',
+                        duration: 1,
+                        ease: 'power4.out',
+                        scrollTrigger: {
+                            trigger: span,
+                            start: 'top 85%',
+                            toggleActions: "play none none reverse"
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

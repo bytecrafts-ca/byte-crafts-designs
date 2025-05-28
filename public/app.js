@@ -1,27 +1,28 @@
-window.addEventListener('load', () => {
-    // Create a transition element
-    const transitionOverlay = document.createElement('div');
-    transitionOverlay.className = 'page-transition-overlay';
-    document.body.appendChild(transitionOverlay);
+appjs:
+    window.addEventListener('load', () => {
+        // Create a transition element
+        const transitionOverlay = document.createElement('div');
+        transitionOverlay.className = 'page-transition-overlay';
+        document.body.appendChild(transitionOverlay);
 
-    // Animate in
-    gsap.from(transitionOverlay, {
-        scaleY: 0,
-        duration: 0.8,
-        ease: "expo.inOut",
-        transformOrigin: "top center",
-        onComplete: () => {
-            // Animate out
-            gsap.to(transitionOverlay, {
-                scaleY: 0,
-                duration: 0.8,
-                ease: "expo.inOut",
-                transformOrigin: "bottom center",
-                delay: 0.2
-            });
-        }
+        // Animate in
+        gsap.from(transitionOverlay, {
+            scaleY: 0,
+            duration: 0.8,
+            ease: "expo.inOut",
+            transformOrigin: "top center",
+            onComplete: () => {
+                // Animate out
+                gsap.to(transitionOverlay, {
+                    scaleY: 0,
+                    duration: 0.8,
+                    ease: "expo.inOut",
+                    transformOrigin: "bottom center",
+                    delay: 0.2
+                });
+            }
+        });
     });
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize GSAP animations
@@ -117,16 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-    });
-
-    // Sticky header on scroll
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
     });
 
     // Portfolio filtering
@@ -388,50 +379,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-modal');
 
     function openModal() {
-        modal.classList.add('active');
-        modal.style.display = 'block';
-
-        gsap.fromTo(modal, { opacity: 0, backdropFilter: 'blur(0px)' }, {
-            opacity: 1,
-            backdropFilter: 'blur(5px)',
-            duration: 0.4
-        });
-
-        gsap.fromTo('.modal-content', {
-            y: 50,
-            opacity: 0,
-            scale: 0.95
-        }, {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            duration: 0.6,
-            ease: "back.out(1.2)"
-        });
-
         document.body.style.overflow = 'hidden';
+        modal.classList.add('active');
     }
 
     function closeModal() {
-        gsap.to('.modal-content', {
-            y: 50,
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.3,
-            ease: "power2.in"
-        });
-
-        gsap.to(modal, {
-            opacity: 0,
-            backdropFilter: 'blur(0px)',
-            duration: 0.4,
-            delay: 0.1,
-            onComplete: () => {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                modal.classList.remove('active');
-            }
-        });
+        document.body.style.overflow = 'auto';
+        modal.classList.remove('active');
     }
 
     // Open modal
@@ -454,12 +408,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close modal when clicking outside content
     if (modal) {
-        window.addEventListener('click', function(event) {
+        modal.addEventListener('click', function(event) {
             if (event.target === modal) {
                 closeModal();
             }
         });
     }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 
     const consultationForm = document.querySelector('#consultation-form');
     if (consultationForm) {
@@ -618,7 +579,7 @@ function initAnimations() {
         gsap.set('.process-line', {
             position: 'absolute',
             height: '2px',
-            background: 'var(--primary)',
+            background: 'white',
             top: '50%',
             left: 0,
             width: '0%',
@@ -1082,6 +1043,21 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Tab') {
         document.body.classList.add('keyboard-nav');
     }
+});
+// Theme toggle
+const themeToggle = document.createElement('div');
+themeToggle.innerHTML = `
+    <button id="theme-toggle" class="btn btn-sm">
+        <i class="fas fa-moon"></i> Dark Mode
+    </button>
+`;
+document.querySelector('nav').appendChild(themeToggle);
+
+document.getElementById('theme-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    this.innerHTML = document.body.classList.contains('dark-theme') ?
+        '<i class="fas fa-sun"></i> Light Mode' :
+        '<i class="fas fa-moon"></i> Dark Mode';
 });
 
 console.log = function() {};

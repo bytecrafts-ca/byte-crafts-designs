@@ -1,4 +1,5 @@
-let particlesConfig = {    particles: {
+let particlesConfig = {
+    particles: {
         number: {
             value: window.innerWidth < 768 ? 50 : 80,
             density: {
@@ -7,7 +8,7 @@ let particlesConfig = {    particles: {
             }
         },
         color: {
-            value: "#3563E9"
+            value: "#FFFFFF"
         },
         shape: {
             type: "circle"
@@ -35,7 +36,7 @@ let particlesConfig = {    particles: {
         line_linked: {
             enable: true,
             distance: 150,
-            color: "#3563E9",
+            color: "#FFFFFF",
             opacity: 0.2,
             width: 1.5
         },

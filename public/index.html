@@ -2,11 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>ByteCraft Designs | Professional Web Design & Development Services</title>
     <meta name="description" content="ByteCraft Designs creates custom, high-performance websites for small businesses. Get a beautiful, mobile-friendly website that converts visitors into customers.">
     <meta name="keywords" content="web design, web development, business website, ecommerce website, responsive design, SEO, website maintenance, custom website">
+    <meta name="author" content="ByteCraft Designs">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#3563E9">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.bytecraftdesigns.com">
@@ -17,13 +22,18 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.bytecraftdesigns.com">
     <meta property="og:image" content="https://www.bytecraftdesigns.com/images/social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ByteCraft Designs">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ByteCraft Designs | Professional Web Design & Development Services">
     <meta name="twitter:description" content="Custom web design and development services for small businesses. Get a beautiful, mobile-friendly website that converts visitors into customers.">
     <meta name="twitter:image" content="https://www.bytecraftdesigns.com/images/social-preview.jpg">
+    <meta name="twitter:site" content="@bytecraftdesigns">
+    <meta name="twitter:creator" content="@bytecraftdesigns">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -31,25 +41,33 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3563e9">
-    <meta name="msapplication-TileColor" content="#3563e9">
-    <meta name="theme-color" content="#ffffff">
 
-    <!-- Fonts and Styles -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preconnect and DNS-Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
-    <!-- Preload critical resources -->
+    <!-- Preload Critical Resources -->
     <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" crossorigin>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
 
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
 
-    <!-- Schema.org markup for Google -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" defer></script>
+    <script src="app.js" defer></script>
+
+    <!-- Schema.org Markup -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -59,6 +77,7 @@
             "@id": "https://www.bytecraftdesigns.com",
             "url": "https://www.bytecraftdesigns.com",
             "telephone": "+15551234567",
+            "priceRange": "$$",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Web Street",
@@ -74,13 +93,7 @@
             },
             "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                ],
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                 "opens": "09:00",
                 "closes": "17:00"
             },
@@ -93,32 +106,10 @@
         }
     </script>
 
-    <script src="app.js" defer></script>
-    <!-- Add these to your head section -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
-
-    <!-- Preload critical assets -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="app.js" as="script">
-
-    <!-- Load non-critical CSS asynchronously -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <!-- Add security headers via .htaccess or server config -->
-    <!-- Add referrer policy -->
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- Add X-UA-Compatible for IE -->
+    <!-- Security Headers -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3563E9">
-    <!-- In your index.html head section -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="app.js" as="script">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" crossorigin>
-    <meta name="slick-site-verification" content="searchconsole-w2ph3uyshbb" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="slick-site-verification" content="searchconsole-w2ph3uyshbb">
 </head>
 
 <body>
@@ -129,7 +120,7 @@
         <div class="container">
             <nav role="navigation" aria-label="Main navigation">
                 <a href="#" class="logo" aria-label="ByteCraft Designs Home">
-                    <img src="photos/byte.jpg" alt="ByteCraft Designs Logo" width="auto" height="50" loading="eager" fetchpriority="high">
+                    <img src="photos/byte.webp" alt="ByteCraft Designs Logo" width="auto" height="50" loading="eager" fetchpriority="high">
                 </a>
                 <ul class="nav-links" aria-label="Main menu">
                     <li><a href="#home" aria-current="page">Home</a></li>
@@ -168,7 +159,7 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="photos/design-illustration.png" alt="Website design illustration showing a computer screen with design elements" data-src="real-image.webp">
+                        <img src="photos/design-illustration.webp" alt="Website design illustration showing a computer screen with design elements" data-src="real-image.webp">
                     </div>
                 </div>
             </div>
@@ -252,7 +243,7 @@
                 </div>
                 <div id="panel-all" class="portfolio-grid" role="tabpanel" aria-labelledby="tab-all">
                     <div class="portfolio-item" data-category="web">
-                        <img src="photos/apex.png" alt="A&A website design showcase" loading="lazy">
+                        <img src="photos/apex.webp" alt="A&A website design showcase" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>A&A Automods</h3>
                             <p>Car modification Website Design</p>

@@ -1,13 +1,26 @@
 {
     "rewrites": [{
-        "source": "/received",
-        "destination": "/received.html"
-    }],
+            "source": "/received",
+            "destination": "/received.html"
+        },
+        {
+            "source": "/transformations",
+            "destination": "/transformations.html"
+        }
+    ],
     "headers": [{
-        "source": "/received.html",
-        "headers": [{
-            "key": "Cache-Control",
-            "value": "public, max-age=3600"
-        }]
-    }]
+            "source": "/received.html",
+            "headers": [{
+                "key": "Cache-Control",
+                "value": "public, max-age=3600"
+            }]
+        },
+        {
+            "source": "/transformations.html",
+            "headers": [{
+                "key": "Cache-Control",
+                "value": "public, max-age=3600"
+            }]
+        }
+    ]
 }

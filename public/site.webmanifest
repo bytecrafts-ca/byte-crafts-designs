@@ -1,0 +1,11 @@
+{
+    "name": "ByteCraft Designs",
+    "short_name": "ByteCraft",
+    "description": "Professional web design and development services for small businesses",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#293541",
+    "theme_color": "#3563E9",
+    "related_applications": [],
+    "prefer_related_applications": false
+}

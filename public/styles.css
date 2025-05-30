@@ -2404,13 +2404,6 @@ h3 {
     text-align: center;
 }
 
-/* Always force hero text color for transformation page, all screen sizes */
-.transformation-hero h1,
-.transformation-hero .subtitle {
-    color: #fff !important;
-    text-shadow: 0 2px 8px rgba(41,53,65,0.18);
-}
-
 .transformation-hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;

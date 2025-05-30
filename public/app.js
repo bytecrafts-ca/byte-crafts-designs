@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
             prices.forEach((price, index) => {
                 // Store current price text for animation
                 const currentPrice = price.innerHTML;
-                const newPrice = this.checked ? ['$99<span>/month</span>', '$199<span>/month</span>', '$349<span>/month</span>'][index] : ['$699<span>/one-time</span>', '$1,399<span>/one-time</span>', '$1,899<span>/one-time</span>'][index];
+                const newPrice = this.checked ? ['$49<span>/month</span>', '$99<span>/month</span>', '$129<span>/month</span>'][index] : ['$599<span>/one-time</span>', '$1,199<span>/one-time</span>', '$1,499<span>/one-time</span>'][index];
 
                 // Create animation timeline
                 const tl = gsap.timeline();

@@ -577,12 +577,159 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section id="faq" class="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Questions & Answers</span>
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <p>Get answers to common questions about our web design services</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How much does a custom website cost?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our custom website packages start at $599 for a basic small business website. E-commerce websites typically start at $1,499. We offer transparent pricing with no hidden fees. Contact us for a free quote tailored to your specific
+                                needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does it take to build a website?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The timeline depends on the complexity of your project. A basic website typically takes 3-5 weeks, while more complex e-commerce sites may take 5-10 weeks. We'll provide a detailed timeline after our initial consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you provide website maintenance?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer comprehensive website maintenance plans to keep your site secure, up-to-date, and performing at its best. Our plans include regular updates, security monitoring, backups, and technical support.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Will my website be mobile-friendly?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! All our websites are built with a mobile-first approach, ensuring they look and function perfectly on all devices including smartphones, tablets, and desktops.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you offer SEO services?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we include basic SEO optimization with all our packages. This includes proper meta tags, structured data, fast loading speeds, and mobile optimization. We also offer advanced SEO services for businesses looking to rank
+                                higher in search results.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I update my website myself?</span>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We can build your website with easy-to-use content management systems that allow you to make basic updates yourself. We also provide training and documentation to help you manage your content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <span class="section-tag">Get In Touch</span>
+                            <h2>Let's Start Your Project</h2>
+                            <p>Ready to take your business online? Fill out the form and we'll get back to you within 24 hours.</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>(416) 834-3587</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>bytecrafts.ca@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="main-contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="main-name">Full Name *</label>
+                                    <input type="text" id="main-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="main-email">Email *</label>
+                                    <input type="email" id="main-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="main-phone">Phone Number</label>
+                                    <input type="tel" id="main-phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="main-service">Service Interested In</label>
+                                    <select id="main-service" name="service">
+                                        <option value="">Select a service</option>
+                                        <option value="Starter Package">Starter Package ($599)</option>
+                                        <option value="Business Package">Business Package ($1,199)</option>
+                                        <option value="Paypal Integration Package">Paypal Integration Package ($1,499)</option>
+                                        <option value="Custom Solution">Custom Solution</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="main-message">Tell us about your project *</label>
+                                <textarea id="main-message" name="message" rows="5" required placeholder="Describe your business, goals, and what you're looking for in a website..."></textarea>
+                            </div>
+                            <div class="form-success hidden">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Thank You!</h3>
+                                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                            </div>
+                            <button type="submit" class="btn btn-enhanced submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CTA Section -->
-        <section id="contact" class="cta">
+        <section class="cta">
             <div class="container">
                 <h2>Ready to Transform Your Online Presence?</h2>
                 <p>Let's create a stunning website that drives results for your business.</p>
-                <a href="#contact" class="btn btn-white contact-btn">Get a Free Consultation</a>
+                <a href="#contact" class="btn btn-white">Get Started Today</a>
             </div>
         </section>
     </main>

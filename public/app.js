@@ -413,11 +413,61 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // FAQ Functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+            // Close all other FAQ items
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    otherQuestion.setAttribute('aria-expanded', 'false');
+                    otherQuestion.nextElementSibling.classList.remove('active');
+                }
+            });
+
+            // Toggle current FAQ item
+            question.setAttribute('aria-expanded', !isExpanded);
+            answer.classList.toggle('active');
+        });
+    });
+
+    // Main Contact Form
+    const mainContactForm = document.querySelector('#main-contact-form');
+    if (mainContactForm) {
+        const mainFormSuccess = mainContactForm.querySelector('.form-success');
+        const mainSubmitBtn = mainContactForm.querySelector('.submit-btn');
+
+        mainContactForm.addEventListener('submit', async(e) => {
+            e.preventDefault();
+
+            if (mainSubmitBtn) {
+                mainSubmitBtn.textContent = 'Sending...';
+                mainSubmitBtn.disabled = true;
+            }
+
+            // Simulate form submission (replace with actual submission logic)
+            setTimeout(() => {
+                mainContactForm.style.display = 'none';
+                if (mainFormSuccess) {
+                    mainFormSuccess.classList.remove('hidden');
+                }
+
+                if (mainSubmitBtn) {
+                    mainSubmitBtn.textContent = 'Send Message';
+                    mainSubmitBtn.disabled = false;
+                }
+            }, 1500);
+        });
+    }
+
     const consultationForm = document.querySelector('#consultation-form');
     if (consultationForm) {
         // Get form elements up front
-        const formSuccess = document.querySelector('.form-success'); // Add this line
-        const sendButton = document.querySelector(".submit-button");
+        const formSuccess = document.querySelector('#consultation-form .form-success');
+        const sendButton = consultationForm.querySelector("button[type='submit']");
 
         consultationForm.addEventListener("submit", (e) => {
             e.preventDefault();

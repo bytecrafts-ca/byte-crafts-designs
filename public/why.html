@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Why Choose ByteCraft Designs | Transform Your Business Online</title>
+    <meta name="description" content="Discover why your business needs a professional website. See real results from our clients and learn how ByteCraft Designs transforms businesses online.">
+    <meta name="keywords" content="professional website, business growth, web design benefits, online presence, digital transformation">
+    <meta name="author" content="ByteCraft Designs">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#3563E9">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.bytecraftdesigns.com/why">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Why Choose ByteCraft Designs | Transform Your Business Online">
+    <meta property="og:description" content="Discover why your business needs a professional website and see real results from our clients.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bytecraftdesigns.com/why">
+    <meta property="og:image" content="https://www.bytecraftdesigns.com/images/why-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Enhanced styles for the redesigned why page */
+        
+        .why-hero {
+            background: linear-gradient(135deg, rgb(41, 53, 65) 0%, rgb(53, 65, 78) 100%);
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .why-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-shape:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-shape:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+        
+        .floating-shape:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .hero-content-new {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text-new {
+            max-width: 500px;
+        }
+        
+        .hero-text-new h1 {
+            font-size: 3.2rem;
+            color: white !important;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+        
+        .highlight-gradient {
+            background: linear-gradient(45deg, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .highlight-gradient::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(45deg, #F59E0B, #EF4444);
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: underlineExpand 2s ease-out 1s forwards;
+        }
+        
+        @keyframes underlineExpand {
+            to {
+                transform: scaleX(1);
+            }
+        }
+        
+        .hero-text-new p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9) !important;
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+        
+        .mac-window-container {
+            position: relative;
+            perspective: 1000px;
+        }
+        
+        .mac-window {
+            background: #2D3748;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transform: rotateY(-15deg) rotateX(5deg);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mac-window:hover {
+            transform: rotateY(-10deg) rotateX(2deg) scale(1.02);
+        }
+        
+        .mac-titlebar {
+            background: #1A202C;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .mac-buttons {
+            display: flex;
+            gap: 6px;
+        }
+        
+        .mac-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .mac-button:hover {
+            transform: scale(1.2);
+        }
+        
+        .mac-button.close {
+            background: #FF5F57;
+        }
+        
+        .mac-button.minimize {
+            background: #FFBD2E;
+        }
+        
+        .mac-button.maximize {
+            background: #28CA42;
+        }
+        
+        .mac-content {
+            padding: 30px;
+            background: white;
+            min-height: 300px;
+            position: relative;
+        }
+        
+        .browser-bar {
+            background: #F7FAFC;
+            border-radius: 6px;
+            padding: 8px 12px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #718096;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .website-preview {
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            border-radius: 8px;
+            padding: 25px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .website-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="2"/></g></svg>') repeat;
+            z-index: 0;
+        }
+        
+        .website-preview-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stats-floating {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 15px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            color: #2D3748;
+            font-weight: 600;
+            animation: floatStats 4s ease-in-out infinite;
+        }
+        
+        @keyframes floatStats {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .stat-1 {
+            top: 20px;
+            right: -30px;
+            transform: rotate(5deg);
+            animation-delay: 0s;
+        }
+        
+        .stat-2 {
+            bottom: 30px;
+            left: -40px;
+            transform: rotate(-8deg);
+            animation-delay: 2s;
+        }
+        /* Problem reveal section */
+        
+        .problem-reveal {
+            background: white;
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .problem-reveal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(239, 68, 68, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            z-index: 0;
+        }
+        
+        .problem-reveal-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .reveal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .reveal-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E2E8F0;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            color: #2D3748 !important;
+        }
+        
+        .reveal-card h3 {
+            color: #2D3748 !important;
+        }
+        
+        .reveal-card p {
+            color: #4A5568 !important;
+        }
+        
+        .reveal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #EF4444, #F59E0B);
+        }
+        
+        .reveal-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .reveal-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #EF4444, #F59E0B);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 25px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .reveal-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #EF4444, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        /* Interactive transformation section */
+        
+        .transformation-interactive {
+            background: linear-gradient(135deg, rgb(53, 65, 78) 0%, rgb(41, 53, 65) 100%);
+            padding: 100px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .transformation-interactive::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill="none" stroke="%23ffffff" stroke-width="1" opacity="0.05"><circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="25"/></g></svg>') repeat;
+            animation: backgroundMove 30s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes backgroundMove {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .transformation-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .interactive-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 60px auto 0;
+        }
+        
+        .timeline-progress {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, #F59E0B, #EF4444);
+            border-radius: 2px;
+            z-index: 1;
+            transition: width 1s ease;
+        }
+        
+        .timeline-step {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 80px;
+            align-items: center;
+            opacity: 0.6;
+            transition: all 0.6s ease;
+        }
+        
+        .timeline-step.active {
+            opacity: 1;
+            transform: scale(1.02);
+        }
+        
+        .timeline-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-number {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #F59E0B, #EF4444);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-number:hover {
+            transform: scale(1.1);
+        }
+        
+        .timeline-number::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .timeline-step.active .timeline-number::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            color: white !important;
+        }
+        
+        .timeline-step.active .timeline-content {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .timeline-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: white !important;
+        }
+        
+        .timeline-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        
+        .timeline-features {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .timeline-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+            color: rgba(255, 255, 255, 0.85) !important;
+        }
+        
+        .timeline-features i {
+            color: #F59E0B;
+        }
+        /* Success showcase with animations */
+        
+        .success-showcase {
+            background: white;
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .showcase-card {
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            color: white;
+            position: relative;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .showcase-card:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+        
+        .showcase-header {
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .showcase-metric {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .metric-counter {
+            display: inline-block;
+        }
+        
+        .showcase-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .showcase-details {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .showcase-details h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: white !important;
+        }
+        
+        .showcase-details p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        /* Enhanced CTA section */
+        
+        .final-cta {
+            background: linear-gradient(135deg, rgb(41, 53, 65) 0%, rgb(53, 65, 78) 100%);
+            padding: 120px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+            z-index: 0;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: linear-gradient(45deg, white, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cta-content p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-enhanced {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        
+        .btn-enhanced::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .btn-enhanced:hover::before {
+            left: 100%;
+        }
+        
+        .btn-enhanced:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 1024px) {
+            .hero-content-new {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+            .mac-window {
+                max-width: 500px;
+                margin: 0 auto;
+                transform: none;
+            }
+            .mac-window:hover {
+                transform: scale(1.02);
+            }
+            .timeline-step,
+            .timeline-step:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-text-new h1 {
+                font-size: 2.5rem;
+            }
+            .cta-content h2 {
+                font-size: 2.2rem;
+            }
+            .reveal-grid,
+            .showcase-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .stat-1,
+            .stat-2 {
+                position: relative;
+                top: auto;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                transform: none;
+                margin: 10px auto;
+                display: block;
+                width: fit-content;
+            }
+            .timeline-number {
+                width: 80px;
+                height: 80px;
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-text-new h1 {
+                font-size: 2rem;
+            }
+            .reveal-number {
+                font-size: 2.5rem;
+            }
+            .showcase-metric {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="logo" aria-label="ByteCraft Designs Home">
+                    <img src="photos/byte.webp" alt="ByteCraft Designs Logo" width="auto" height="50" loading="eager">
+                </a>
+                <ul class="nav-links" aria-label="Main menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="#contact" class="contact-btn btn-nav">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Enhanced Hero Section -->
+        <section class="why-hero" aria-labelledby="hero-heading">
+            <div class="floating-elements">
+                <div class="floating-shape">
+                    <i class="fas fa-chart-line" style="font-size: 3rem; color: #F59E0B;"></i>
+                </div>
+                <div class="floating-shape">
+                    <i class="fas fa-rocket" style="font-size: 2.5rem; color: #3B82F6;"></i>
+                </div>
+                <div class="floating-shape">
+                    <i class="fas fa-star" style="font-size: 2rem; color: #F59E0B;"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-content-new">
+                    <div class="hero-text-new">
+                        <h1 id="hero-heading">Why Your Business Deserves a <span class="highlight-gradient">Professional Website</span></h1>
+                        <p>In today's digital-first world, your website isn't just a nice-to-have—it's your most powerful business tool. Discover how the right web presence transforms businesses like yours into industry leaders.</p>
+                        <div class="hero-btns">
+                            <a href="#problem" class="btn btn-enhanced">See The Reality</a>
+                            <a href="#contact" class="btn btn-outline btn-enhanced">Start Transformation</a>
+                        </div>
+                    </div>
+                    <div class="mac-window-container">
+                        <div class="mac-window">
+                            <div class="mac-titlebar">
+                                <div class="mac-buttons">
+                                    <div class="mac-button close"></div>
+                                    <div class="mac-button minimize"></div>
+                                    <div class="mac-button maximize"></div>
+                                </div>
+                            </div>
+                            <div class="mac-content">
+                                <div class="browser-bar">
+                                    <i class="fas fa-lock"></i>
+                                    <span>https://your-business.com</span>
+                                </div>
+                                <div class="website-preview">
+                                    <div class="website-preview-content">
+                                        <h3>Your Business Online</h3>
+                                        <p>Professional • Trusted • Converting 24/7</p>
+                                    </div>
+                                </div>
+                                <div class="stats-floating stat-1">
+                                    <div>+150% Traffic</div>
+                                </div>
+                                <div class="stats-floating stat-2">
+                                    <div>+89% Leads</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Reveal Section -->
+        <section id="problem" class="problem-reveal" aria-labelledby="problem-heading">
+            <div class="container">
+                <div class="problem-reveal-content">
+                    <div class="section-header">
+                        <span class="section-tag">The Harsh Reality</span>
+                        <h2 id="problem-heading" style="color: #2D3748 !important;">What You're Losing Every Day Without a Professional Website</h2>
+                        <p style="color: #4A5568 !important;">These aren't just statistics—they're lost opportunities happening to your business right now</p>
+                    </div>
+                    <div class="reveal-grid">
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-users-slash"></i>
+                            </div>
+                            <div class="reveal-number">73%</div>
+                            <h3>Customers Lost Forever</h3>
+                            <p>of potential customers will permanently leave if your website doesn't look professional, loads slowly, or doesn't work on mobile devices.</p>
+                        </div>
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="reveal-number">15h</div>
+                            <h3>Weekly Time Drain</h3>
+                            <p>spent answering the same basic questions that a well-designed website with clear information could handle automatically.</p>
+                        </div>
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-chart-line-down"></i>
+                            </div>
+                            <div class="reveal-number">60%</div>
+                            <h3>Revenue You're Missing</h3>
+                            <p>less revenue compared to businesses with professional, optimized websites that work as 24/7 sales machines.</p>
+                        </div>
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-search-minus"></i>
+                            </div>
+                            <div class="reveal-number">85%</div>
+                            <h3>Invisible to Customers</h3>
+                            <p>of local searches never find businesses without proper online presence, meaning customers go to competitors instead.</p>
+                        </div>
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="reveal-number">92%</div>
+                            <h3>Trust Factor Missing</h3>
+                            <p>of consumers won't trust a business without a professional website, viewing it as unreliable or outdated.</p>
+                        </div>
+                        <div class="reveal-card">
+                            <div class="reveal-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="reveal-number">68%</div>
+                            <h3>Mobile Traffic Lost</h3>
+                            <p>of web traffic now comes from mobile devices, but non-responsive sites lose all these potential customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Transformation Journey -->
+        <section class="transformation-interactive" aria-labelledby="transformation-heading">
+            <div class="container">
+                <div class="transformation-content">
+                    <div class="section-header">
+                        <span class="section-tag">The Transformation</span>
+                        <h2 id="transformation-heading">Your Journey from Invisible to Unstoppable</h2>
+                        <p>See exactly how we transform struggling businesses into digital success stories</p>
+                    </div>
+                    <div class="interactive-timeline">
+                        <div class="timeline-progress"></div>
+                        <div class="timeline-step active">
+                            <div class="timeline-number">1</div>
+                            <div class="timeline-content">
+                                <h3>Strategic Discovery & Analysis</h3>
+                                <p>We don't just build websites—we solve business problems. Our deep-dive discovery process uncovers your unique challenges, opportunities, and competitive advantages.</p>
+                                <ul class="timeline-features">
+                                    <li><i class="fas fa-check"></i> Competitor analysis & market research</li>
+                                    <li><i class="fas fa-check"></i> Customer journey mapping</li>
+                                    <li><i class="fas fa-check"></i> Revenue optimization strategy</li>
+                                    <li><i class="fas fa-check"></i> Brand positioning assessment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-number">2</div>
+                            <div class="timeline-content">
+                                <h3>Custom Design & User Experience</h3>
+                                <p>Your website becomes a powerful sales tool designed specifically for your audience. Every pixel serves a purpose—converting visitors into customers.</p>
+                                <ul class="timeline-features">
+                                    <li><i class="fas fa-check"></i> Conversion-focused design</li>
+                                    <li><i class="fas fa-check"></i> Mobile-first responsive layouts</li>
+                                    <li><i class="fas fa-check"></i> Brand-aligned visual identity</li>
+                                    <li><i class="fas fa-check"></i> User experience optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-number">3</div>
+                            <div class="timeline-content">
+                                <h3>Development & Integration</h3>
+                                <p>Lightning-fast, secure, and search engine optimized. We build websites that not only look amazing but perform exceptionally across all devices and platforms.</p>
+                                <ul class="timeline-features">
+                                    <li><i class="fas fa-check"></i> Advanced SEO optimization</li>
+                                    <li><i class="fas fa-check"></i> Speed & performance optimization</li>
+                                    <li><i class="fas fa-check"></i> Security & backup systems</li>
+                                    <li><i class="fas fa-check"></i> Analytics & tracking setup</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-number">4</div>
+                            <div class="timeline-content">
+                                <h3>Launch & Continuous Growth</h3>
+                                <p>Your website becomes a 24/7 sales machine, consistently attracting qualified leads and converting them into loyal customers while you focus on running your business.</p>
+                                <ul class="timeline-features">
+                                    <li><i class="fas fa-check"></i> Performance monitoring</li>
+                                    <li><i class="fas fa-check"></i> Ongoing optimization</li>
+                                    <li><i class="fas fa-check"></i> Monthly growth reports</li>
+                                    <li><i class="fas fa-check"></i> Dedicated support team</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Success Showcase -->
+        <section class="success-showcase" aria-labelledby="success-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Proven Results</span>
+                    <h2 id="success-heading" style="color: #2D3748 !important;">Real Businesses, Extraordinary Growth</h2>
+                    <p style="color: #4A5568 !important;">These numbers aren't projections—they're actual results from businesses just like yours</p>
+                </div>
+                <div class="showcase-grid">
+                    <div class="showcase-card">
+                        <div class="showcase-header">
+                            <div class="showcase-metric">
+                                <span class="metric-counter">245</span>%
+                            </div>
+                            <div class="showcase-label">Increase in Online Bookings</div>
+                        </div>
+                        <div class="showcase-details">
+                            <h4>Local Restaurant Chain</h4>
+                            <p>Streamlined online ordering system and mobile-optimized design drove massive growth in digital sales, reducing phone orders by 60% while increasing revenue.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-header">
+                            <div class="showcase-metric">
+                                <span class="metric-counter">180</span>%
+                            </div>
+                            <div class="showcase-label">More Qualified Leads</div>
+                        </div>
+                        <div class="showcase-details">
+                            <h4>Professional Services Firm</h4>
+                            <p>Strategic content and conversion optimization attracted higher-quality prospects, improved close rates by 40%, and reduced client acquisition costs.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-header">
+                            <div class="showcase-metric">
+                                <span class="metric-counter">320</span>%
+                            </div>
+                            <div class="showcase-label">ROI in First Year</div>
+                        </div>
+                        <div class="showcase-details">
+                            <h4>E-commerce Retailer</h4>
+                            <p>Complete redesign with payment integration and user experience optimization delivered exceptional returns, turning website visitors into repeat customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Final CTA -->
+        <section id="contact" class="final-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-heading">Stop Losing Customers to Competitors</h2>
+                    <p>Every day you wait is another day of lost revenue, missed opportunities, and customers choosing your competition. Join hundreds of successful businesses who've already transformed their online presence.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-white btn-enhanced contact-btn">Get Your Free Strategy Session</a>
+                        <a href="index.html#portfolio" class="btn btn-outline btn-enhanced">View Success Stories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="footer-logo">ByteCraft<span>Designs</span></a>
+                    <p>We create beautiful, functional websites that help small businesses succeed online.</p>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Custom Website Design</a></li>
+                        <li><a href="index.html#services">Mobile-First Development</a></li>
+                        <li><a href="index.html#services">E-Commerce Solutions</a></li>
+                        <li><a href="index.html#services">SEO Optimization</a></li>
+                        <li><a href="index.html#services">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#portfolio">Our Work</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#contact" class="contact-btn">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i>(416) 834-3587</li>
+                        <li><i class="fas fa-envelope"></i>bytecrafts.ca@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ByteCraft Designs. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Request a Free Strategy Session</h2>
+            <form id="consultation-form">
+                <div class="form-group">
+                    <label for="consult-name">Full Name *</label>
+                    <input type="text" id="consult-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="consult-email">Email *</label>
+                    <input type="email" id="consult-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="consult-phone">Phone Number *</label>
+                    <input type="tel" id="consult-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="consult-service">Service Interested In</label>
+                    <select id="consult-service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Custom Website Design">Custom Website Design</option>
+                        <option value="Mobile-First Development">Mobile-First Development</option>
+                        <option value="E-Commerce Solutions">E-Commerce Solutions</option>
+                        <option value="Starter Package">Starter Package</option>
+                        <option value="Business Package">Business Package</option>
+                        <option value="Paypal Integration Package">Paypal Integration Package</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consult-message">Tell us about your project</label>
+                    <textarea id="consult-message" name="message" rows="4"></textarea>
+                </div>
+                <h2 class="form-success hidden">SUCCESS</h2>
+                <button type="submit" class="btn btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script>
+        // Enhanced GSAP animations for the why page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize GSAP and ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero section enhanced animations
+            gsap.timeline()
+                .from('.hero-text-new h1', {
+                    y: 100,
+                    opacity: 0,
+                    duration: 1.2,
+                    ease: "power4.out"
+                })
+                .from('.hero-text-new p', {
+                    y: 60,
+                    opacity: 0,
+                    duration: 1,
+                    ease: "power3.out"
+                }, "-=0.6")
+                .from('.hero-btns .btn', {
+                    y: 40,
+                    opacity: 0,
+                    duration: 0.8,
+                    stagger: 0.2,
+                    ease: "back.out(1.2)"
+                }, "-=0.4")
+                .from('.mac-window', {
+                    x: 100,
+                    opacity: 0,
+                    duration: 1.2,
+                    ease: "power3.out"
+                }, "-=1");
+
+            // Floating elements animation
+            gsap.to('.floating-shape', {
+                y: "random(-20, 20)",
+                x: "random(-10, 10)",
+                rotation: "random(-15, 15)",
+                duration: "random(4, 8)",
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                stagger: {
+                    amount: 2,
+                    from: "random"
+                }
+            });
+
+            // Reveal cards animation
+            gsap.utils.toArray('.reveal-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 80,
+                    opacity: 0,
+                    duration: 0.8,
+                    delay: i * 0.15,
+                    ease: "back.out(1.2)"
+                });
+            });
+
+            // Interactive timeline
+            const timelineSteps = gsap.utils.toArray('.timeline-step');
+            const progressBar = document.querySelector('.timeline-progress');
+
+            // Timeline step interactions
+            timelineSteps.forEach((step, index) => {
+                const number = step.querySelector('.timeline-number');
+
+                number.addEventListener('click', () => {
+                    // Remove active class from all steps
+                    timelineSteps.forEach(s => s.classList.remove('active'));
+                    // Add active class to clicked step
+                    step.classList.add('active');
+
+                    // Update progress bar
+                    const progress = ((index + 1) / timelineSteps.length) * 100;
+                    gsap.to(progressBar, {
+                        width: `${progress}%`,
+                        duration: 0.8,
+                        ease: "power2.out"
+                    });
+                });
+
+                // Scroll-triggered activation
+                ScrollTrigger.create({
+                    trigger: step,
+                    start: "top 60%",
+                    onEnter: () => {
+                        timelineSteps.forEach(s => s.classList.remove('active'));
+                        step.classList.add('active');
+
+                        const progress = ((index + 1) / timelineSteps.length) * 100;
+                        gsap.to(progressBar, {
+                            width: `${progress}%`,
+                            duration: 0.8,
+                            ease: "power2.out"
+                        });
+                    }
+                });
+            });
+
+            // Success showcase counter animation
+            gsap.utils.toArray('.metric-counter').forEach(counter => {
+                const target = parseInt(counter.textContent);
+
+                ScrollTrigger.create({
+                    trigger: counter,
+                    start: "top 80%",
+                    onEnter: () => {
+                        gsap.fromTo(counter, {
+                            textContent: 0
+                        }, {
+                            textContent: target,
+                            duration: 2,
+                            ease: "power2.out",
+                            snap: {
+                                textContent: 1
+                            },
+                            stagger: 0.2
+                        });
+                    }
+                });
+            });
+
+            // Enhanced showcase card animations
+            gsap.utils.toArray('.showcase-card').forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 100,
+                    opacity: 0,
+                    rotation: 5,
+                    duration: 1,
+                    delay: i * 0.2,
+                    ease: "back.out(1.2)"
+                });
+            });
+
+            // CTA section animation
+            gsap.from('.cta-content', {
+                scrollTrigger: {
+                    trigger: '.final-cta',
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 60,
+                opacity: 0,
+                duration: 1.2,
+                ease: "power3.out"
+            });
+
+            // Enhanced button hover effects
+            document.querySelectorAll('.btn-enhanced').forEach(btn => {
+                btn.addEventListener('mouseenter', () => {
+                    gsap.to(btn, {
+                        scale: 1.05,
+                        duration: 0.3,
+                        ease: "power2.out"
+                    });
+                });
+
+                btn.addEventListener('mouseleave', () => {
+                    gsap.to(btn, {
+                        scale: 1,
+                        duration: 0.3,
+                        ease: "power2.out"
+                    });
+                });
+            });
+
+            // Mac window button interactions
+            document.querySelectorAll('.mac-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    gsap.to(button, {
+                        scale: 0.8,
+                        duration: 0.1,
+                        yoyo: true,
+                        repeat: 1,
+                        ease: "power2.inOut"
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

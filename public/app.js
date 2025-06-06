@@ -83,40 +83,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close mobile menu when clicking on a link
+    // In app.js, update the click handler for nav items to:
     navItems.forEach(item => {
-        ['click', 'touchend'].forEach(eventType => {
-            item.addEventListener(eventType, function(e) {
-                e.stopPropagation();
+        item.addEventListener('click', function(e) {
+            // Close mobile menu if open
+            if (mobileMenu && navLinks.classList.contains('active')) {
+                toggleMobileMenu(false);
+            }
 
-                // Close mobile menu if open
-                if (mobileMenu && navLinks.classList.contains('active')) {
-                    toggleMobileMenu(false);
-                }
+            // Handle internal page links
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetPage = this.getAttribute('data-page'); // Add data-page attribute
 
-                // Check if this is a contact button
-                if (this.classList.contains('contact-btn')) {
-                    e.preventDefault();
-                    openModal();
-                    return;
-                }
-
-                // Handle hash links with smooth scroll
-                if (this.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-
+                if (targetPage) {
+                    // Handle page transitions
+                    window.location.href = targetPage + targetId;
+                } else {
+                    // Handle same-page anchors
+                    const target = document.querySelector(targetId);
                     if (target) {
-                        const headerOffset = 80;
-                        const elementPosition = target.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
+                        // Scroll to target
                     }
                 }
-            });
+            }
         });
     });
 

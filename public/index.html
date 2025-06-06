@@ -154,12 +154,97 @@
                         <h1 id="hero-heading">Custom Web Design for Your Business</h1>
                         <p>Elevate your online presence with professional, affordable, and high-converting websites tailored to your specific business needs.</p>
                         <div class="hero-btns">
-                            <a href="#contact" class="btn contact-btn">Get a Free Consultation</a>
-                            <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+                            <a href="#contact" class="btn contact-btn btn-enhanced">Get a Free Consultation</a>
+                            <a href="#portfolio" class="btn btn-outline btn-enhanced">View Our Work</a>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="photos/design-illustration.webp" alt="Website design illustration showing a computer screen with design elements" data-src="real-image.webp">
+                    <div class="hero-windows">
+                        <div class="mac-windows-container">
+                            <!-- Window 1 - Analytics Dashboard -->
+                            <div class="mac-window window-1">
+                                <div class="mac-titlebar">
+                                    <div class="mac-buttons">
+                                        <div class="mac-button close"></div>
+                                        <div class="mac-button minimize"></div>
+                                        <div class="mac-button maximize"></div>
+                                    </div>
+                                    <div class="window-title">Analytics Dashboard</div>
+                                </div>
+                                <div class="mac-content analytics-content">
+                                    <div class="chart-area">
+                                        <div class="metric">
+                                            <span class="metric-value">+247%</span>
+                                            <span class="metric-label">Traffic Growth</span>
+                                        </div>
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 30%"></div>
+                                            <div class="chart-bar" style="height: 60%"></div>
+                                            <div class="chart-bar" style="height: 85%"></div>
+                                            <div class="chart-bar" style="height: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Window 2 - Website Preview -->
+                            <div class="mac-window window-2">
+                                <div class="mac-titlebar">
+                                    <div class="mac-buttons">
+                                        <div class="mac-button close"></div>
+                                        <div class="mac-button minimize"></div>
+                                        <div class="mac-button maximize"></div>
+                                    </div>
+                                    <div class="window-title">Your New Website</div>
+                                </div>
+                                <div class="mac-content website-content">
+                                    <div class="browser-bar">
+                                        <i class="fas fa-lock"></i>
+                                        <span>https://your-business.com</span>
+                                    </div>
+                                    <div class="website-preview">
+                                        <h4>Professional Business Site</h4>
+                                        <div class="preview-elements">
+                                            <div class="preview-nav"></div>
+                                            <div class="preview-hero"></div>
+                                            <div class="preview-content"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Window 3 - Performance Metrics -->
+                            <div class="mac-window window-3">
+                                <div class="mac-titlebar">
+                                    <div class="mac-buttons">
+                                        <div class="mac-button close"></div>
+                                        <div class="mac-button minimize"></div>
+                                        <div class="mac-button maximize"></div>
+                                    </div>
+                                    <div class="window-title">Performance</div>
+                                </div>
+                                <div class="mac-content performance-content">
+                                    <div class="performance-stats">
+                                        <div class="perf-item">
+                                            <span class="perf-score">98</span>
+                                            <span class="perf-label">Speed</span>
+                                        </div>
+                                        <div class="perf-item">
+                                            <span class="perf-score">100</span>
+                                            <span class="perf-label">SEO</span>
+                                        </div>
+                                        <div class="perf-circle">
+                                            <svg viewBox="0 0 36 36">
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
+                                                      fill="none" stroke="#E2E8F0" stroke-width="3"/>
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
+                                                      fill="none" stroke="#10B981" stroke-width="3" 
+                                                      stroke-dasharray="85, 100"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,11 +336,11 @@
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="web">
-                        <img src="https://via.placeholder.com/400x300/f5f9ff/3563E9?text=GreenThumb" alt="Wealth management" data-src="real-image.webp" loading="lazy">
+                        <img src="photos/accounting.png" alt="Wealth management" data-src="real-image.webp" loading="lazy">
                         <div class="portfolio-overlay">
-                            <h3>Wealth Management</h3>
-                            <p>wealth managements services</p>
-                            <a href="#" class="btn btn-sm" aria-label="View GreenThumb project details">View Project</a>
+                            <h3>Milton Accounting</h3>
+                            <p>accounting managements services</p>
+                            <a href="milton-accounting.vercel.app" class="btn btn-sm" aria-label="View GreenThumb project details">View Project</a>
                         </div>
                     </div>
                     <div class="portfolio-item" data-category="ecommerce">
@@ -688,21 +773,82 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
     <script>
+        // Particles configuration
+        const particlesConfig = {
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.1,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.1,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        };
+
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize particles
-            particlesJS('particles-js', particlesConfig);
+            // Initialize particles if particles.js is available
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', particlesConfig);
+            }
 
             // Interactive gradient effect
             const hero = document.querySelector('.hero');
-            hero.addEventListener('mousemove', (e) => {
-                const rect = hero.getBoundingClientRect();
-                const x = ((e.clientX - rect.left) / rect.width) * 100;
-                const y = ((e.clientY - rect.top) / rect.height) * 100;
-                hero.style.setProperty('--x', `${x}%`);
-                hero.style.setProperty('--y', `${y}%`);
-            });
+            if (hero) {
+                hero.addEventListener('mousemove', (e) => {
+                    const rect = hero.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    hero.style.setProperty('--x', `${x}%`);
+                    hero.style.setProperty('--y', `${y}%`);
+                });
+            }
         });
     </script>
 </body>

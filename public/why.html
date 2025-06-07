@@ -783,22 +783,26 @@
     <header role="banner">
         <div class="container">
             <nav role="navigation" aria-label="Main navigation">
-                <a href="index.html" class="logo" aria-label="ByteCraft Designs Home">
-                    <img src="photos/byte.webp" alt="ByteCraft Designs Logo" width="auto" height="50" loading="eager">
+                <a href="#" class="logo" aria-label="ByteCraft Designs Home">
+                    <img src="photos/byte.webp" alt="ByteCraft Designs Logo" width="auto" height="50" loading="eager" fetchpriority="high">
                 </a>
                 <ul class="nav-links" aria-label="Main menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact" class="contact-btn btn-nav">Get Started</a></li>
                 </ul>
-                <button class="mobile-menu" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <button class="mobile-menu" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+ <span></span>
+ <span></span>
+ <span></span>
+ </button>
+                <!-- Mobile navigation menu (hidden by default) -->
+                <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="menu" hidden>
+                    <!-- Mobile menu content will be inserted by JavaScript -->
+                </div>
             </nav>
         </div>
     </header>

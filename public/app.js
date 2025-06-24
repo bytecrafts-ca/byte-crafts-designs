@@ -39,11 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let touchEndX = 0;
 
     // Toggle mobile menu function
+    // Update mobile menu toggle function
     function toggleMobileMenu(show) {
         if (mobileMenu) {
             mobileMenu.classList.toggle('active', show);
             navLinks.classList.toggle('active', show);
             document.body.classList.toggle('menu-open', show);
+
+            // Update ARIA attributes
+            mobileMenu.setAttribute('aria-expanded', show);
+            navLinks.setAttribute('aria-hidden', !show);
 
             const spans = mobileMenu.querySelectorAll('span');
             if (show) {

@@ -88,29 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close mobile menu when clicking on a link
-    // In app.js, update the click handler for nav items to:
+    // Update your nav item click handler to:
     navItems.forEach(item => {
         item.addEventListener('click', function(e) {
-            // Close mobile menu if open
-            if (mobileMenu && navLinks.classList.contains('active')) {
-                toggleMobileMenu(false);
-            }
-
-            // Handle internal page links
             if (this.getAttribute('href').startsWith('#')) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                const targetPage = this.getAttribute('data-page'); // Add data-page attribute
+                const target = document.querySelector(targetId);
 
-                if (targetPage) {
-                    // Handle page transitions
-                    window.location.href = targetPage + targetId;
-                } else {
-                    // Handle same-page anchors
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        // Scroll to target
+                if (target) {
+                    // Close mobile menu if open
+                    if (mobileMenu && navLinks.classList.contains('active')) {
+                        toggleMobileMenu(false);
                     }
+
+                    // Smooth scroll to target with header offset
+                    gsap.to(window, {
+                        scrollTo: {
+                            y: target,
+                            offsetY: 80 // Adjust for header height
+                        },
+                        duration: 0.8
+                    });
                 }
             }
         });
@@ -328,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
             prices.forEach((price, index) => {
                 // Store current price text for animation
                 const currentPrice = price.innerHTML;
-                const newPrice = this.checked ? ['$49<span>/month</span>', '$99<span>/month</span>', '$129<span>/month</span>'][index] : ['$599<span>/one-time</span>', '$1,199<span>/one-time</span>', '$1,499<span>/one-time</span>'][index];
+                const newPrice = this.checked ? ['$20<span>/month</span>', '$40<span>/month</span>', '$60<span>/month</span>'][index] : ['$99<span>/one-time</span>', '$199<span>/one-time</span>', '$299<span>/one-time</span>'][index];
 
                 // Create animation timeline
                 const tl = gsap.timeline();
